@@ -1,0 +1,23 @@
+.first-target {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.second-target {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.wrapper__text {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .wrapper__text {
+    color: green;
+  }
+}
+
+.wrapper__text_mod1 + .wrapper__text_mod2 {
+  color: black;
+}

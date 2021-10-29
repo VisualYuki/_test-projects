@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "babel": "babel src -d dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8"
+  }
+}

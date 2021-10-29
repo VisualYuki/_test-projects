@@ -1,0 +1,38 @@
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+//.reusable-selector {
+//  font-size: 12px;
+//  line-height: 20px;
+//}
+
+//@mixin reusable-selector {
+//  font-size: 12px;
+//  line-height: 20px;
+//}
+
+//.first-target {
+//  @include reusable-selector;
+//}
+
+//.second-target {
+//  @include reusable-selector;
+//}
+
+.wrapper {
+  &__text {
+    color: red;
+
+    @include mobile {
+      color: green;
+    }
+
+    &_mod1 + &_mod2 {
+      color: black;
+    }
+    //@include flex("center", "center", "column", "wrap");
+  }
+}
