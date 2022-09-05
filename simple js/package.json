@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "build": "rollup -c"
+  },
   "dependencies": {
-    "vue": "^2.6.14"
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "rollup": "^2.76.0",
+    "vue": "^3.2.37"
   }
 }

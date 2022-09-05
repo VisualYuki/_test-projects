@@ -8,15 +8,22 @@
   </head>
   <body>
     <p>hello</p>
-    <script src="./index.js"></script>
-    <script src="./_index.js"></script>
-    <script>
-      document.querySelector(".test").COMMENT_NODE;
-      console.log("after inline script");
-    </script>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">{{ message }}</div>
 
     <script>
-      console.log("after inline script1212");
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            message: "Hello Vue!",
+          };
+        },
+      }).mount("#app");
     </script>
+    <script src="./index.js"></script>
+    <script src="./bundle.js"></script>
   </body>
 </html>

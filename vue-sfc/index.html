@@ -7,14 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <p>hello</p>
-    <script src="./index.js"></script>
-
-    <script>
-      document.querySelector(".test");
-      console.log("after inline script");
-    </script>
-
+    <p class="test">test text</p>
+    <p class="red">red text</p>
+    <div id="app">
+      <button @click="count++">Count is: {{ count }}</button>
+    </div>
+    <script src="./dist/main.js"></script>
     <script></script>
   </body>
 </html>

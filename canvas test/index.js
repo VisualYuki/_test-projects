@@ -1,11 +1,19 @@
 let canvas = document.getElementById("my-canvas");
 
 let ctx = canvas.getContext("2d");
-ctx.globalAlpha = 0.5;
-//ctx.fillStyle = "red";
-//ctx.fillRect(50, 50, 10, 10);
+let ctx2 = canvas.getContext("2d");
+
 ctx.strokeStyle = "red";
-ctx.lineWidth = 0.5;
+ctx.lineWidth = 10;
 ctx.rect(50, 50, 50, 50);
 ctx.stroke();
-ctx.arc(40, 40, 20, 0, Math.PI * 2);
+
+ctx.save();
+
+ctx.rect(150, 150, 100, 100);
+ctx.stroke();
+
+ctx.restore();
+
+//ctx2.rect(100, 100, 100, 100);
+//ctx2.stroke();
